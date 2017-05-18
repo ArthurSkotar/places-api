@@ -19,6 +19,12 @@ public class PlaceDaoImpl implements PlaceDao {
         document.append("rating", place.getRating());
         document.append("types", place.getTypes());
         document.append("vicinity", place.getVicinity());
+        document.append("phto", place.getPhoto());
+        document.append("phoneNUmber", place.getPhoneNumber());
+        document.append("openingHours", place.getOpeningHours());
+        document.append("siteUrl", place.getSiteUrl());
+        document.append("priceLevel", place.getPriceLevel());
+        document.append("internationalPhoneNumber", place.getInternationalPhoneNumber());
         MongoConnector.getInstance().getPlacesCollection().insertOne(document);
     }
 }

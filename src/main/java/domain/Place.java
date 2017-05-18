@@ -20,7 +20,9 @@ public class Place {
     private double rating;
     private String url;
     private String siteUrl;
-    private List<String> openingHors;
+    private String photo;
+    private List<String> openingHours;
+    private String priceLevel;
 
     public String getAddress() {
         return address;
@@ -110,11 +112,27 @@ public class Place {
         this.siteUrl = siteUrl;
     }
 
-    public List<String> getOpeningHors() {
-        return openingHors;
+    public List<String> getOpeningHours() {
+        return openingHours;
     }
 
-    public void setOpeningHors(List<String> openingHors) {
-        this.openingHors = openingHors;
+    public void setOpeningHours(List<String> openingHours) {
+        this.openingHours = openingHours;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
+    public String getPriceLevel() {
+        return priceLevel;
+    }
+
+    public void setPriceLevel(String priceLevel) {
+        this.priceLevel = priceLevel;
     }
 }
